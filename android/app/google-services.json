@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "509162906924",
+    "project_id": "acsass-signin",
+    "storage_bucket": "acsass-signin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509162906924:android:e613979f950502c140b889",
+        "android_client_info": {
+          "package_name": "com.example.acsass_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509162906924-dn8m7ji97g39a61afs794kkjkhq71vr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxxWEhyFc4aJsIIT-98eFKSQxqvXadY68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509162906924-dn8m7ji97g39a61afs794kkjkhq71vr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
