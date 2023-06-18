@@ -16,7 +16,7 @@ If you don't have an account, tap on Signup.
     Signup:
 
 1. Enter your name
-2. Enter your email id
+2. Enter your email ID
 3. Create a Password
 (Password must have minimum 6 characters)
 4. Tap on Signup
