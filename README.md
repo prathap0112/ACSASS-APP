@@ -1,16 +1,30 @@
-# acsass_app
+# ACSASS DEMO APP
 
 A simple app with a user login page using flutter x firebase
 
-## Getting Started
+How to use ACSASS Demo App:
 
-This project is a starting point for a Flutter application.
+    Instructions:
 
-A few resources to get you started if this is your first Flutter project:
+1. Open the app from your installed android device.
+2. Enter your user credentials (Email and Password) and login.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+	Result: You'll see the homescreen.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you don't have an account, tap on Signup.
+
+    Signup:
+
+1. Enter your name
+2. Enter your email id
+3. Create a Password
+(Password must have minimum 6 characters)
+4. Tap on Signup
+
+    Note: You've successfully created an account.
+
+
+
+<h2>Where the user credential data will go?</h2>
+
+In this app(ACSASS Demo) we used the firebase auth. So your data will securely saved in firebase authentication.
