@@ -1,6 +1,6 @@
 # acsass_app
 
-A simple app with a login page
+A simple app with a user login page using flutter x firebase
 
 ## Getting Started
 
