@@ -1,3 +1,8 @@
+#APP UI
+![App_ui_acsass](https://github.com/prathap0112/ACSASS-APP/assets/56537384/46af9a66-b8c8-484a-8fbc-cb0171397020)
+
+
+
 # ACSASS DEMO APP
 
 A simple app with a user login page using flutter x firebase
@@ -22,9 +27,3 @@ If you don't have an account, tap on Signup.
 4. Tap on Signup
 
     Note: You've successfully created an account.
-
-
-
-<h2>Where the user credential data will go?</h2>
-
-In this app(ACSASS Demo) we used the firebase auth. So your data will securely saved in firebase authentication.
