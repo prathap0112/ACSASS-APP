@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 Image logoWidget(String imageName) {
   return Image.asset(
     imageName,
@@ -12,6 +10,7 @@ Image logoWidget(String imageName) {
   );
 }
 
+//TextField with email, password, icon, and controller for reuse
 TextField reusableTextField(String text, IconData icon, bool isPasswordType,
     TextEditingController controller) {
   return TextField(
@@ -43,6 +42,7 @@ TextField reusableTextField(String text, IconData icon, bool isPasswordType,
   );
 }
 
+//elevated button for sign in/sign up
 Container SignInSignUpButton(
     BuildContext context, bool isLogin, Function onTap) {
   return Container(
@@ -60,14 +60,16 @@ Container SignInSignUpButton(
             color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 16),
       ),
       style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.resolveWith((states) {
-            if (states.contains(MaterialState.pressed)) {
-              return Colors.black;
-            }
-            return Colors.white;
-          }),
-          shape: MaterialStateProperty.all(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))),
+        backgroundColor: MaterialStateProperty.resolveWith((states) {
+          if (states.contains(MaterialState.pressed)) {
+            return Colors.black;
+          }
+          return Colors.white;
+        }),
+        //rounded borders for elevated button
+        shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(30))),
+      ),
     ),
   );
 }

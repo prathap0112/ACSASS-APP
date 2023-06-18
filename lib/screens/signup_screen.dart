@@ -30,28 +30,25 @@ class _SignUpScreenState extends State<SignUpScreen> {
         ),
       ),
       body: GestureDetector(
-        onTap: (){
+        onTap: () {
           FocusManager.instance.primaryFocus?.unfocus();
         },
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          color: Colors.orangeAccent,
+          color: Colors.teal[900],
           child: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(20, 120, 20, 0),
               child: Column(
                 children: [
-                  reusableTextField(
-                      "Enter Username",
-                      Icons.person_outline_rounded,
-                      false,
+                  reusableTextField("Name", Icons.person_outline_rounded, false,
                       _userNameTextController),
                   const SizedBox(height: 20),
-                  reusableTextField("Enter Email ID",
-                      Icons.person_outline_rounded, false, _emailTextController),
+                  reusableTextField("Email ID", Icons.mail_outline_rounded,
+                      false, _emailTextController),
                   const SizedBox(height: 20),
-                  reusableTextField("Enter Password", Icons.lock_outline_rounded,
+                  reusableTextField("Password", Icons.lock_outline_rounded,
                       true, _passwordTextController),
                   const SizedBox(height: 20),
                   SignInSignUpButton(context, false, () {
@@ -61,8 +58,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             password: _passwordTextController.text)
                         .then((value) {
                       print("Created New Account");
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const HomeScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomeScreen()));
                     }).onError((error, stackTrace) {
                       print("Error ${error.toString()}");
                     });

@@ -20,13 +20,13 @@ class _SigninScreenState extends State<SigninScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GestureDetector(
-        onTap: (){
+        onTap: () {
           FocusManager.instance.primaryFocus?.unfocus();
         },
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          color: Colors.orangeAccent,
+          color: Colors.teal[900],
           child: SingleChildScrollView(
             child: Padding(
               padding: EdgeInsets.fromLTRB(
@@ -35,10 +35,10 @@ class _SigninScreenState extends State<SigninScreen> {
                 children: [
                   logoWidget("assets/images/acsass.png"),
                   SizedBox(height: 20),
-                  reusableTextField("Enter Username",
-                      Icons.person_outline_rounded, false, _emailTextController),
+                  reusableTextField("Email", Icons.person_outline_rounded,
+                      false, _emailTextController),
                   SizedBox(height: 20),
-                  reusableTextField("Enter Password", Icons.lock_outline_rounded,
+                  reusableTextField("Password", Icons.lock_outline_rounded,
                       true, _passwordTextController),
                   SizedBox(height: 20),
                   SignInSignUpButton(context, true, () {
@@ -47,8 +47,10 @@ class _SigninScreenState extends State<SigninScreen> {
                             email: _emailTextController.text,
                             password: _passwordTextController.text)
                         .then((value) {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomeScreen()));
                     }).onError((error, stackTrace) {
                       print("Error ${error.toString()}");
                     });
